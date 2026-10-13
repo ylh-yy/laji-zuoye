@@ -61,6 +61,29 @@ audio:focus-visible {
     font-weight: 700;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px 20px;
+}
+
+.home-link {
+    padding: 9px 12px;
+    border: 1px solid #ffffff25;
+    border-radius: 6px;
+    color: var(--accent);
+    font-size: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.home-link:hover {
+    background: #ffffff0a;
+    border-color: var(--accent);
+}
+
 .brand-icon {
     color: var(--bg);
     background: var(--accent);
@@ -280,6 +303,17 @@ footer a {
 }
 
 @media (max-width: 560px) {
+    .header-inner {
+        flex-wrap: wrap;
+        padding: 16px 0;
+        gap: 14px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .container {
         width: calc(100% - 32px);
     }
